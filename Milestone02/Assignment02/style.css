@@ -1,0 +1,222 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Fira+Sans+Condensed:ital@1&family=Fira+Sans:ital@1&family=Lobster&family=Poppins:wght@400;500&display=swap");
+/* Common Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.heading {
+  text-align: center;
+}
+.start,
+.collections {
+  margin-bottom: 100px;
+}
+.fa-star,
+.fa-star-half-alt {
+  color: #fb8200;
+}
+.fa-arrow-right {
+  margin-left: 5px;
+}
+h3 {
+  line-height: 50%;
+}
+span {
+  color: #5e6366;
+  margin-left: 20px;
+}
+button {
+  background-color: #e02c6d;
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+/* Large Device(1025px-upper) */
+/* 1. Start Journey */
+.start {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: end;
+  align-items: center;
+}
+.start h1 {
+  font-size: 3em;
+}
+
+/* 2. Collections */
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.collection {
+  border: 2px solid #e02c6d;
+  border-radius: 10px;
+}
+.collection-img {
+  overflow: hidden;
+}
+.collection-img img {
+  width: 100%;
+}
+.collection-img:hover img {
+  transform: scale(1.3);
+  transition: transform 1s ease-in;
+}
+.collection-name {
+  font-size: 1.5em;
+  font-weight: 500px;
+}
+.collection-price {
+  font-weight: 200px;
+  color: rgba(0, 0, 0, 0.774);
+}
+.collection-description p {
+  line-height: 25%;
+  color: #787885;
+  font-weight: bold;
+}
+/* 3. Question & Offers */
+.question-offers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: start;
+}
+/* 4. Question */
+.question p {
+  font-weight: bold;
+}
+form input {
+  border: 2px solid #e02c6d;
+  border-radius: 10px;
+  width: 100%;
+  height: 25px;
+}
+form textarea {
+  border: 2px solid #e02c6d;
+  border-radius: 10px;
+  width: 100%;
+}
+.question-offers button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* 5. Offer */
+.offer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 55px;
+}
+.see-offer {
+  background-color: #e02c6d;
+  padding: 40px;
+  text-align: center;
+}
+.see-offer div {
+  display: none;
+  width: 80px;
+}
+.see-offer:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in;
+  background-color: #fb8200;
+}
+.see-offer:hover h3 {
+  display: none;
+}
+.see-offer:hover div {
+  display: block;
+  font-weight: bold;
+  color: white;
+}
+/* 6. Footer */
+.footer {
+  height: 150px;
+  background-color: rgb(1, 1, 41);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#footer-header {
+  font-size: 24px;
+  font-weight: bold;
+}
+.footer p {
+  padding: 0;
+  margin: 0;
+}
+/* Maximum 1024px width */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .start {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .question-offers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+/* Maximum 767px width*/
+@media only screen and (max-width: 767px) and (min-width: 499px) {
+  .start {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    display: wrap;
+  }
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    column-gap: 0;
+  }
+  .question-offers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+/* Maximum 500px width */
+@media only screen and (max-width: 500px) and (min-width: 0px) {
+  .start {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    display: wrap;
+  }
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .question-offers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .offer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer {
+    width: 100%;
+  }
+}

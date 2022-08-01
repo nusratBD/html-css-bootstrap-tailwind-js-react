@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bat {
+        height: 350px;
+        border: 2px solid seagreen;
+      }
+      .bat img {
+        width: 25%;
+      }
+      .bat:hover img {
+        transform: rotate(-60deg);
+        transform-origin: top right;
+        transition: transform 0.2s ease;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      }
+      .bat:hover .ball {
+        transform: translate(900px, -100px);
+        transition
+      }
+
+      .ball {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        border-radius: 50%;
+        position: relative;
+        left: 425px;
+        transition: transform 1s ease-out 0.2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bat">
+      <img src="images/bat.jpg" alt="" />
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+}
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+}
+#border {
+  border-left: 5px solid;
+  border-image: linear-gradient(
+    rgb(248, 159, 159),
+    rgb(243, 243, 145),
+    rgb(181, 248, 181)
+  );
+  border-image-slice: 1;
+  line-height: 25px;
+}
+h2 {
+  font-family: "Lobster", cursive;
+  font-weight: 30px;
+  line-height: 15px;
+}
+h3 {
+  font-family: "Lobster", cursive;
+}
+span {
+  color: rgba(172, 36, 36, 0.973);
+}
+p {
+  font-family: "Fira Sans", sans-serif;
+  text-align: justify;
+}
+section {
+  margin-bottom: 100px;
+}
+#section1 {
+  margin-top: 50px;
+}
+.section-flex {
+  display: flex;
+}
+.half-width {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 50%;
+}
+#top-img {
+  border-radius: 50%;
+}
+.half-width img {
+  width: 80%;
+  border-radius: 20px;
+}
+.link-button {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-image: linear-gradient(
+    rgb(243, 243, 145),
+    rgb(181, 248, 181),
+    rgb(248, 159, 159)
+  );
+  color: rgba(172, 36, 36, 0.973);
+  font-family: "Lobster", cursive;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.div-flex {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.div-flex-width {
+  width: 33.33%;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.div-flex-width img {
+  width: 30%;
+}
+#mission {
+  background-color: rgb(243, 243, 145);
+  margin-right: 20px;
+}
+#vission {
+  background-color: rgb(181, 248, 181);
+  margin-right: 20px;
+}
+#goal {
+  background-color: rgb(248, 159, 159);
+}
+.section-flex-img {
+  width: 35%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.section-flex-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+.text-center {
+  text-align: center;
+}
+#registration {
+  width: 50%;
+}
+#form {
+  background-image: linear-gradient(
+    rgb(248, 159, 159),
+    rgb(243, 243, 145),
+    rgb(181, 248, 181)
+  );
+  border-radius: 10px;
+  padding-left: 135px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+input {
+  height: 25px;
+  border-radius: 10px;
+  width: 310px;
+  border-color: rgb(248, 159, 159);
+}
+.empty-div {
+  width: 25%;
+}
+footer {
+  height: 100px;
+  background-color: black;
+  padding-top: 25px;
+}
+.footer-color {
+  color: white;
+}
+.mid-banner {
+  background-image: url(Photos/Others/mid-banner.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}

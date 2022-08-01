@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible</title>
+    
+    <style>
+      .container {
+        height: 500px;
+        border: 2px dotted;
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+      }
+      .box {
+        height: 300px;
+        width: 200px;
+        border: 2px dashed rebeccapurple;
+      }
+      #box1 {
+        order: 2;
+      }
+      #box2 {
+        flex-grow: 1;
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexible is Here</h1>
+    <div class="container">
+      <div class="box" id="box1">Box-1</div>
+      <div class="box" id="box2">Box-2</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <title>Hotel Site</title>
+  </head>
+  <body>
+    <header><h1 class="text-5xl text-center mt-8 mb-8">Hotel <span class="font-semibold text-purple-600">Accounts</span>!!!</h1></header>
+    <main>
+      <section>
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+          <div class="bg-blue-300 p-16 rounded  text-white"><h3 class="text-2xl">Deposit</h3>
+          <h4 class="text-4xl">$00</h4>
+        </div>
+        <div class="bg-green-300 p-16 rounded text-white"><h3 class="text-2xl">Widthraw</h3>
+          <h4 class="text-4xl">$00</h4>
+        </div>
+        <div class="bg-yellow-300 p-16 rounded  text-white"><h3 class="text-2xl">Balance</h3>
+          <h4 class="text-4xl">$00</h4>
+        </div>
+        </div>
+      </section>
+      <section class="mt-16">
+        <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+          <div action="" class="bg-orange-200 p-8">
+            <h3 class="text-2xl mb-2">Please Deposit</h3>
+            <input id = "deposit-input" type="text" placeholder="Enter Your Deposit Amount" class="border-2 border-gray-400 rounded-md w-3/4 mb-4 px-2">
+            <button class="bg-yellow-600 px-4 py-2 rounded block text-white font-bold" id="deposit-btn">Submit</button>
+        </div>
+        <div action="" class="bg-pink-200 p-8">
+          <h3 class="text-2xl mb-2">Please Widthraw</h3>
+          <input id = "widthraw-input" type="text" placeholder="Enter Your Widthraw Amount" class="border-2 border-gray-400 rounded-md w-3/4 mb-4 px-2">
+          <button class="bg-yellow-600 px-4 py-2 rounded block text-white font-bold" id="widthraw-btn">Submit</button>
+      </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/hotel.js"></script>
+  </body>
+</html>

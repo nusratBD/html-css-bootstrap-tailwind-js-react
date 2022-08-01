@@ -1,0 +1,26 @@
+.nav-link{
+    color: black;
+    font-weight: 500;
+}
+section{
+    margin-bottom: 100px;
+}
+.short-description{
+    background-color: rgb(255, 245, 242);
+}
+.main-heading{
+    font-size: 60px;
+    line-height: 85%;
+    color: #fabe4c
+}
+.btn{
+    background-color: #A4BC46;
+    font-weight: 500;
+}
+.imgBg{
+    background-color: rgb(233, 233, 252);
+}
+h3{
+    color: #fabe4c;
+    font-weight: 600;
+}

@@ -1,0 +1,15 @@
+#country {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.country {
+  border: 3px solid goldenrod;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: aquamarine;
+}
+.country img {
+  width: 200px;
+}

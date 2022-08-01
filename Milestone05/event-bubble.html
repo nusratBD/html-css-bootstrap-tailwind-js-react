@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubble</title>
+  </head>
+  <body>
+    <section id="section">
+      <h1>Section</h1>
+      <ul id="ul">
+        UL
+        <li id="li1">List-01</li>
+        <li id="li2">List-02</li>
+        <li id="li3">List-03</li>
+        <li id="li4">List-04</li>
+        <li id="li5">List-05</li>
+        <li id="li6">List-06</li>
+      </ul>
+    </section>
+    <script>
+      document.getElementById("ul").addEventListener("click", function () {
+        console.log("UL Clicked");
+      });
+      document.getElementById("section").addEventListener("click", function () {
+        console.log("Section Clicked");
+      });
+      document.getElementById("li1").addEventListener("click", function () {
+        console.log("List1 Clicked");
+        event.stopPropagation();
+      });
+      document.getElementById("li2").addEventListener("click", function () {
+        console.log("List2 Clicked");
+        // event.stopPropagation();
+      });
+      document.getElementById("li3").addEventListener("click", function () {
+        console.log("List3 Clicked");
+        // event.stopPropagation();
+      });
+      document.getElementById("li4").addEventListener("click", function () {
+        console.log("List4 Clicked");
+        // event.stopPropagation();
+      });
+      document.getElementById("li5").addEventListener("click", function () {
+        console.log("List5 Clicked");
+        // event.stopPropagation();
+      });
+      document.getElementById("li6").addEventListener("click", function () {
+        console.log("List6 Clicked");
+        // event.stopPropagation();
+      });
+    </script>
+  </body>
+</html>

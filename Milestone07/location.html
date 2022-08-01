@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location</title>
+  </head>
+  <body>
+    <h1>Location</h1>
+    <button onclick="Refresh()">Refresh</button>
+    <button onclick="Assign()">Assign</button>
+    <script>
+      const Refresh = () => {
+        location.reload();
+      };
+      const Assign = () => {
+        location.assign('https://app.grammarly.com/');
+      };
+    </script>
+  </body>
+</html>

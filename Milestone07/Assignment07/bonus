@@ -1,0 +1,20 @@
+Code Compilation
+
+Some years ago, JS was only an interpreted language, but now it is both an interpreted and compiled language. The compiler converts the full JS code into machine language, and the interpreter executes the machine code line by line, showing any errors immediately. 
+
+Code Loading
+
+Step 01: To ease the work, the JS Engine breaks the code into small pieces, which is known as the Execution Context. At the beginning, when there are no codes in JS, the browser creates a global execution context that consists of: window: global object, this: window, variable object, and scope chain, and this Execution Context stays in the loading phase.
+
+Step 02: When JS code comes, all the variables take memory in the variable object and set the value to undefined. Functions of the code also go to the variable, but they also take their own reference memory.
+
+Step03: All the scopes are stored in the scope chain section.
+
+Code Execution:
+
+1. At the beginning of the execution, the variables are replaced with their value. Then the functions are called according to their reference position and show the output.
+
+Difference Between Local Storage and Session Storage
+Ans: Local Storage and Session Storage are all the same but a simple difference only. Session storage vanishes when the page session is end but local Storage doesn't expire till anyone delete it. 
+
+When we open a page in a tab, a new session starts. If we close that tab, the session will end. Even if we take a new tab and open the same page, the previous session doesn't exists rather it starts a new session. How long the the page is open, the session remains alive. 

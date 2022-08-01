@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Banking</title>
+  </head>
+  <body class="w-3/4 mx-auto">
+    <header>
+      <h1 class="text-5xl text-center mt-16">
+        My Account <span class="font-semibold text-purple-600">Data</span>
+      </h1>
+    </header>
+    <main>
+      <!-- Balance Statistics  -->
+      <section class="mt-16">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-blue-300 p-8 rounded">
+            <h1 class="text-2xl">Deposit</h1>
+            <p class="text-4xl">$<span id="deposit-total">50</span></p>
+          </div>
+          <div class="bg-yellow-300 p-8 rounded">
+            <h1 class="text-2xl">Withdraw</h1>
+            <p class="text-4xl">$<span id="withdraw-total">00</span></p>
+          </div>
+          <div class="bg-green-300 p-8 rounded">
+            <h1 class="text-2xl">Balance</h1>
+            <p class="text-4xl">$<span id="total-balance">1200</span></p>
+          </div>
+        </div>
+      </section>
+      <!-- Money Deposit and Widthdraw -->
+      <section class="mt-8">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-red-100 p-8 rounded">
+            <h1 class="text-2xl">Please Deposit</h1>
+            <input
+              type="number"
+              placeholder="Deposit Your Amount $"
+              class="border-2 border-gray-400 rounded block w-3/4 px-2 mb-4"
+              id="deposit-input"
+            />
+            <button
+              class="bg-red-300 px-4 py-2 rounded font-medium"
+              id="deposit-btn"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-orange-100 p-8 rounded">
+            <h1 class="text-2xl">Please Withdraw</h1>
+            <input
+              type="number"
+              placeholder="Widthraw Your Amount $"
+              class="border-2 border-gray-400 rounded block w-3/4 px-2 mb-4"
+              id="withdraw-input"
+            />
+            <button
+              class="bg-orange-300 px-4 py-2 rounded font-medium"
+              id="withdraw-btn"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/function-banking2.js"></script>
+  </body>
+</html>

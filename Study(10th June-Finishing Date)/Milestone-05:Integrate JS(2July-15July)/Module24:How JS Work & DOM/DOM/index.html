@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="blogs">
+      <article class="blog">
+        <h1>My Awesome Blog- 1</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+          laborum corrupti nulla illum. Alias consequuntur laborum omnis quidem
+          nostrum harum iusto dolorem, sapiente facilis ad repudiandae eum
+          veritatis, necessitatibus corrupti sunt aut earum praesentium, fugiat
+          aliquid. Eligendi voluptas rerum sed facere eum hic labore corrupti
+          illum nostrum, obcaecati officia architecto nisi, deserunt repellendus
+          pariatur possimus porro. Aliquid hic, perferendis iure in iste nam eos
+          eius architecto ad!
+        </p>
+      </article>
+      <article class="blog" id="second-blog">
+        <h1>My Awesome Blog- 2</h1>
+        <p>
+          Debitis repellat laudantium animi beatae suscipit sit tenetur quisquam
+          dignissimos, eligendi quae vel quibusdam ipsa omnis quasi facilis
+          nobis ut temporibus labore. Vel, iste! Sunt explicabo provident
+          aspernatur cupiditate? Pariatur, tempore qui facilis autem nesciunt
+          iure, ipsam cupiditate, quos porro distinctio ratione. Tempora
+          adipisci obcaecati aperiam accusantium. Consectetur ut culpa eaque
+          ipsa natus similique nemo? Praesentium ratione temporibus dolore
+          mollitia numquam qui quasi, aspernatur, excepturi quos nemo quae,
+          repellendus nisi! Minima quam impedit mollitia, tempora omnis deleniti
+          consectetur cupiditate ducimus consequatur quasi fugiat sed in nostrum
+          natus delectus possimus expedita fugit eius! Explicabo nihil quam
+          consequuntur tenetur soluta reprehenderit repellat quidem qui esse
+          temporibus praesentium sed totam suscipit, asperiores earum iure
+          minima unde repellendus, et quod dolorum inventore a. Animi in iusto
+          cum, deserunt ipsum pariatur minima error corrupti ut atque totam
+          molestias accusantium?
+        </p>
+      </article>
+      <article class="blog" id="third-blog">
+        <h1 id="third" style="font-size: 40px; text-align: center">
+          My Awesome Blog- 3
+        </h1>
+        <p class="p">
+          Consectetur quos accusantium amet animi quam qui ratione, porro ipsum,
+          magni id veniam quidem molestiae quo nesciunt expedita excepturi
+          distinctio facere aliquid fuga! Mollitia aspernatur quibusdam facere
+          doloremque nam nemo maiores.
+        </p>
+      </article>
+      <article class="blog">
+        <h1 id="dom">DOM: Document Object Model</h1>
+      </article>
+    </section>
+    <script>
+      //   console.log(document);
+      //   console.log(document.body);
+      const myself = {
+        name: "Nusrat Hurain",
+        age: 25,
+        profession: "Software Engineer",
+        salary: 50000000,
+      };
+      //   console.log(myself.salary);
+
+      //getElementByTagName
+      //   console.log(document.getElementsByTagName("article"));
+      let titles = document.getElementsByTagName("h1");
+      for (let h1 of titles) {
+        // console.log(h1);
+        // console.log(h1.innerText);
+      }
+      let paragraphs = document.getElementsByTagName("p");
+      for (let p of paragraphs) {
+        // console.log(p.innerText);
+      }
+
+      //getElementById
+      let jsStyle = document.getElementById("dom").style;
+      console.log(jsStyle);
+      let setStyle = (document.getElementById("dom").style.color = "red");
+      let setfontSize = (document.getElementById("dom").style.fontSize =
+        "x-large");
+      let third = document.getElementById("third");
+      third.innerText = "My Awesome New Blog";
+      third.style.color = "green";
+
+      //getElementsByClassName
+      let blogs = document.getElementsByClassName("blog");
+      for (let blog of blogs) {
+        blog.style.border = "5px solid green";
+        blog.style.borderRadius = "10px";
+        blog.style.margin = "10px";
+        blog.style.padding = "10px";
+      }
+
+      //querySelector
+      document.querySelector(".blog");
+      document.querySelector(".blogs #second-blog p");
+
+      //querySelectorAll
+      document.querySelectorAll(".blog");
+      document.querySelectorAll(".blogs #second-blog p");
+
+      //getAttribute:
+      let thirdBlog = document.getElementById("third");
+      // console.log(thirdBlog.getAttribute("id"));
+      // console.log(thirdBlog.getAttribute("style"));
+
+      //setAttribute:
+      thirdBlog.setAttribute("title", "This is my tooltip");
+
+      //ParentNode:
+      console.log(
+        thirdBlog.parentNode.parentNode.parentNode.parentNode.parentNode
+          .parentNode
+      );
+      //ChildNode"
+      let child = document.getElementById("second-blog");
+      console.log(child.childNodes);
+    </script>
+  </body>
+</html>

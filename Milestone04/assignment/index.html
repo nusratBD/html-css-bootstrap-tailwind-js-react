@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(192, 238, 223);
+      }
+    </style>
+  </head>
+  <body id="add">
+    <article class="blog common">
+      <h1>My Awesome Blog-1</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+    </article>
+    <article class="common">
+      <h1 id="second-title">My Awesome Blog-2</h1>
+      <p class="blog">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+    </article>
+    <article id="thirdBlog" class="common">
+      <h1 class="blog">My Awesome Blog-3</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+    </article>
+
+    <script>
+      //getElementsByTagaName
+      const blogTitles = document.getElementsByTagName("h1");
+      for (const h3 of blogTitles) {
+        // console.log(h3.innerText);
+      }
+      //getElementById
+      const titleStyle = document.getElementById("second-title");
+      titleStyle.style.color = "blue";
+      titleStyle.innerText = "Nusrat Hurain";
+
+      //getElementByQuery
+      const queries = document.querySelectorAll("#thirdBlog");
+      for (const query of queries) {
+        query.style.border = "2px solid red";
+      }
+      //create HTML Elements: 3steps
+      //Step 01:create
+      const h3 = document.createElement("h3");
+      h3.innerText = "New HTML document by JS";
+      //Step 02:define the place
+      const place = document.getElementById("thirdBlog");
+      // Step03:Add the element
+      place.appendChild(h3);
+      //add new article
+      const article = document.createElement("article");
+      article.classList.add("common");
+      const h1 = document.createElement("h1");
+      h1.innerText = "My Awesome Blog-05";
+      const p = document.createElement("p");
+      p.innerHTML =
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+      article.appendChild(h3);
+      article.appendChild(p);
+      //parent of article
+      const articleSection = document.getElementById("add");
+      articleSection.appendChild(article);
+      // Method 02 to add a new article
+      const article6 = document.createElement("article");
+      article6.classList.add("common");
+      article.innerHTML = `
+      <h1>My Awesome Blog- 06</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      `;
+      const articleSection6 = document.getElementById("add");
+      articleSection6.appendChild(article);
+      //getElementByClassName
+      const blogs = document.getElementsByClassName("blog");
+      for (const blog of blogs) {
+        blog.style.color = "orange";
+      }
+      const commons = document.getElementsByClassName("common");
+      for (const common of commons) {
+        common.style.backgroundColor = "gray";
+      }
+    </script>
+  </body>
+</html>

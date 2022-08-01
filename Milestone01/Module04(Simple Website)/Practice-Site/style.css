@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-family: "Pushster", cursive;
+  font-size: 40px;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-family: "Pushster", cursive;
+  font-size: 30px;
+}
+h3 {
+  color: rgb(94, 228, 77);
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+.section-flex {
+  display: flex;
+  margin-bottom: 100px;
+}
+.half-width {
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.half-width img {
+  border-radius: 50%;
+  width: 80%;
+}
+p {
+  text-align: justify;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+.special-text {
+  color: red;
+}
+.top-banner {
+  background-image: url(Photos/Others/top-banner.png);
+  background-repeat: no-repeat;
+  background-size: 5%;
+}
+.mid-banner {
+  background-image: url(Photos/Others/mid-banner.png);
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: right;
+  background-position-y: bottom;
+}
+.link-button {
+  text-decoration: none;
+  background-image: linear-gradient(yellow, rgb(94, 228, 77));
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Pushster", cursive;
+  color: Red;
+
+}
+.bottom-area {
+  display: flex;
+}
+.box-shadow {
+  width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 10px 10px 8px 10px #888888;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5%;
+}
+#php {
+  border-left: 5px solid;
+  border-image: linear-gradient(red, yellow);
+  border-image-slice: 1;
+}
+
+#js {
+  border-left: 5px solid;
+  border-image: linear-gradient(rgb(94, 228, 77), yellow);
+  border-image-slice: 1;
+}
+.bottom-banner {
+  background-image: url(Photos/Others/bottom-banner.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-y: bottom;
+  background-size: 7%;
+}
+footer p {
+  text-align: center;
+}

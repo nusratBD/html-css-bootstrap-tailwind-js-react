@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete By Events</title>
+  </head>
+  <body>
+    <h1 id="delete-text">Delete Effects by Event</h1>
+    <button id="delete">Delete</button>
+    <hr />
+    <h1 id="heading2">Delete with disabled and abled button effect.</h1>
+    <input type="text" id="text2" placeholder="Please type delete" />
+    <button id="delete2" disabled>Delete</button>
+    <script>
+      //focus
+      document.getElementById("text2").addEventListener("focus", function () {
+        document.body.style.backgroundColor = "pink";
+      });
+      //blur
+      document.getElementById("text2").addEventListener("blur", function () {
+        document.body.style.backgroundColor = "lightblue";
+      });
+      //keydown
+      //   document.getElementById("text2").addEventListener("keydown", function () {
+      //     const textWatch = document.getElementById("text2");
+      //     console.log(textWatch.value);
+      //   });
+      //keypress
+      //   document
+      //     .getElementById("text2")
+      //     .addEventListener("keypress", function () {
+      //       const textWatch = document.getElementById("text2");
+      //       console.log(textWatch.value);
+      //     });
+      //   //keyup
+      document
+        .getElementById("text2")
+        .addEventListener("keyup", function (event) {
+          const disableText = document.getElementById("delete2");
+          if (event.target.value == "delete") {
+            disableText.removeAttribute("disabled");
+          } else {
+            disableText.setAttribute("disabled", true);
+          }
+        });
+      document.getElementById("delete2").addEventListener("click", function () {
+        document.getElementById("heading2").style.display = "none";
+      });
+      //change
+      document.getElementById("text2").addEventListener("change", function () {
+        const textWatch = document.getElementById("text2");
+        console.log(textWatch.value);
+      });
+      // Method-01
+      document.getElementById("delete").addEventListener("click", function () {
+        document.getElementById("delete-text").style.display = "none";
+      });
+    </script>
+  </body>
+</html>
