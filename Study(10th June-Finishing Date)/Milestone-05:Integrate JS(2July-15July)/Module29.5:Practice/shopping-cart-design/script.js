@@ -22,16 +22,31 @@ function increment(product){
 function individualPrice(product){
     let productPrice = document.getElementById(product+'-price');
     let productQuantityField = document.getElementById(product+'-quantity');
+    //Phone Price
     if(product == 'phone'){
-        productPrice.innerText =  (productQuantityField.value ) * 1219;
+        productPrice.innerText =  productQuantityField.value  * 1219;
     }
-    if(product == 'case'){
-        productPrice.innerText =  (productQuantityField.value ) * 59;
+    //Case Price
+    else if(product == 'case'){
+        productPrice.innerText =  productQuantityField.value  * 59;
     }
+    totalPrice();
+}
+function totalPrice(){
+    let phonePrice = parseInt(document.getElementById('phone-price').innerText
+        );
+        let casePrice = parseInt(document.getElementById('case-price').innerText
+        );
+    let subTotal = phonePrice + casePrice;
+    document.getElementById('sub-total').innerText = subTotal;
+    let tax = (subTotal*10)/100;
+    document.getElementById('tax').innerText = tax;
+    let total = subTotal + tax;
+    document.getElementById('total').innerText = total;
 }
 //Phone decrement
 document.getElementById('phone-decrement-btn').addEventListener('click', function(){
- decrement('phone');   
+ decrement('phone');  
 })
 //Phone increment
 document.getElementById('phone-increment-btn').addEventListener('click', function(){
