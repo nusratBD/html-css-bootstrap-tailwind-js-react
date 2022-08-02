@@ -1,0 +1,11 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Fira+Sans+Condensed:ital@1&family=Fira+Sans:ital@1&family=Lobster&family=Poppins:wght@400;500&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.fab {
+  font-size: 40px;
+}
