@@ -5,7 +5,6 @@ console.log(result1);
 //02: Three Parameters Arrow Function
 let multiply = (num1, num2, num3) => num1*num2*num3;//Implicit Return
 let result2 = multiply(3, 4, 12);
-console.log(result2);
 //03: One Parameter with bracket Arrow Function
 let oneParameter1 = (num1) => num1*5;//Implicit Return
 let result3 = oneParameter1(5);
