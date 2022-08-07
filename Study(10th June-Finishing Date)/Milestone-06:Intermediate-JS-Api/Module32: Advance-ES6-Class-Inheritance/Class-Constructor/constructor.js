@@ -5,6 +5,7 @@ class Myself{
     name = 'Nusrat Hurain';
     age;
     profession='Software Engineer';
+    country='BD';
     constructor(name, age, profession){
         this.name = name;
         this.age = age;
@@ -20,3 +21,7 @@ let result3 = new Myself('Nusrat Hurain Nuha', 25, 'Software Engineer');
 console.log(result, result2, result3);
 result.instruction();//access the function from the class
 result2.instruction();
+
+/*
+Note: We just access those propertise which will change person to person. Fixed propertirs for everyone will stay outside of constructor with their specfic value.
+*/
