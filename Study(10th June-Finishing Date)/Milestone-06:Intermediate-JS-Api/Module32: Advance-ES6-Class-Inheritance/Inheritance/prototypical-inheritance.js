@@ -1,3 +1,8 @@
+/*
+Prototype: Each object has a private property which holds a link to another object called its prototype.
+
+//Prototypical Inheritance Explained on the bottom of the page
+*/
 //Parent Class
 class Self{
     name;
@@ -54,3 +59,11 @@ let sisterRole2 = new Sister('Nusrat Hurain', 25, 'sister');
 console.log(sisterRole, sisterRole2)
 sisterRole.sister('Dhaka');
 sisterRole2.sister('Lakshmipur');
+console.log(sisterRole2.name);//prototypical inheritance
+/*
+Prototypical inheritance is chaining method from bottom to top
+Here, name=>sisterRole2=>Sister=>Self(It got the name here)
+*/
+console.log(sisterRole2.__proto__.__proto__.__proto__);//prototypical chain/ protypical Inheritance
+console.log(sisterRole.role);
+// console.log(sister.profession); output: error. Because profession is not the property of Sister class
