@@ -25,3 +25,19 @@ result2.instruction();
 /*
 Note: We just access those propertise which will change person to person. Fixed propertirs for everyone will stay outside of constructor with their specfic value.
 */
+//Examples:
+class students07{
+    name;
+    class=7;
+    roll;
+    marks;
+    constructor(name, roll,marks){
+        this.name = name;
+        this.roll = roll;
+        this.marks = marks;
+    }
+}
+let student2 = new students07('Afnan Ahmed', 2, 300);
+let student1 = new students07('Kaniz Fatema', 1, 350);
+let student3 = new students07('Rupusi Khatun', 3, 280);
+console.log(student1, student2, student3);
