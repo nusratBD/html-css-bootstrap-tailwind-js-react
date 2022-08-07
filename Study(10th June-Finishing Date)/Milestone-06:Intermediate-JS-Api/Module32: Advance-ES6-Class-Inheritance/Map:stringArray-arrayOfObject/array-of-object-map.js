@@ -55,5 +55,3 @@ Note: Outside of an array
 */
 const all = shopping.map(product => product);
 console.log(all);
-const foreach = shopping.forEach(product => product);
-console.log(foreach);
