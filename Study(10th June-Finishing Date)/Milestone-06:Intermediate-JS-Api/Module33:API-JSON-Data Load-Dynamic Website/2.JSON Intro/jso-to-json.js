@@ -1,3 +1,4 @@
+//--------------------------------------------------JSO to JSON-----------------------------------------
 //01
 //JSO: Javascript Object
 let user = {
@@ -11,6 +12,7 @@ let jsonUser = JSON.stringify(user);
 console.log(jsonUser);//output: {"id":170515,"name":"Nusrat Hurain","home":"Lakshmipur"}
 
 //02
+//JSO
 const shop = {
     name:'Nusrat Electronics Accessories',
     address: 'New Market',
@@ -32,6 +34,7 @@ output: {
   isExpensive: false
 }
 */
+//JSON
 const shopStringify = JSON.stringify(shop);
 console.log(shopStringify);
 /* 
