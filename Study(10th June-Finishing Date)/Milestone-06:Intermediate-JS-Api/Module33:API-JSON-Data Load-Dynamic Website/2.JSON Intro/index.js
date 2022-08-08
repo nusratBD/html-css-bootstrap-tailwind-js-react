@@ -1,3 +1,4 @@
+//01
 //JSO: Javascript Object
 let user = {
     id: 170515,
@@ -9,3 +10,35 @@ console.log(user);//output: { id: 170515, name: 'Nusrat Hurain', home: 'Lakshmip
 let jsonUser = JSON.stringify(user);
 console.log(jsonUser);//output: {"id":170515,"name":"Nusrat Hurain","home":"Lakshmipur"}
 
+//02
+const shop = {
+    name:'Nusrat Electronics Accessories',
+    address: 'New Market',
+    profit: 15000,
+    products: ['laptop', 'mobile', 'watch', 'car'],
+    isExpensive: false,
+    owner: {
+        name: 'Nusrat Hurain',
+        profession: 'Software Engineer'
+    }
+}
+console.log(shop);
+/* 
+output: {
+  name: 'Nusrat Electronics Accessories',
+  address: 'New Market',
+  profit: 15000,
+  products: [ 'laptop', 'mobile', 'watch', 'car' ],
+  isExpensive: false
+}
+*/
+const shopStringify = JSON.stringify(shop);
+console.log(shopStringify);
+/* 
+{"name":"Nusrat Electronics Accessories","address":"New Market","profit":15000,"products":["laptop","mobile","watch","car"],"isExpensive":false,"owner":{"name":"Nusrat Hurain","profession":"Software Engineer"}}
+
+Note: 
+1. very close to string
+2. can not expand like object
+3. no change in number and boolean
+*/
