@@ -4,7 +4,7 @@ Keyword	    Can be reassigned	    Can be redeclared	    scope	            hoisti
 -----------------------------------------------------------------------------------------
 var	        Yes	                    Yes	                    Function Scope	    Yes
 let	        Yes	                    No	                    Block Scope	        No
-const	    No	                    No	                    Block Scope	        No
+const	        No	                    No	                    Block Scope	        No
 */
 
 //Hoisting: Hoisting is a JS default behaviour where variables and function declarations are moved to the top of their scope before code execution
