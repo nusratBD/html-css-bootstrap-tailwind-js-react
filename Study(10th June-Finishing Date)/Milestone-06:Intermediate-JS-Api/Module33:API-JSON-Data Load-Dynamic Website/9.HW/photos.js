@@ -8,6 +8,7 @@ function displayPhoto(photos){
     let photoContainer = document.getElementById('photos');
     for(let photo of photos){
         let img = document.createElement('img');
+        img.classList.add('img-style');
         img.setAttribute('src', `${photo.url}`);
         photoContainer.appendChild(img);
     }
