@@ -16,3 +16,18 @@
 .data{
     color: black;
         }
+img{
+    height: 100px;
+    width: 200px;
+}
+.country-description{
+    color: cornflowerblue;
+}
+.description-data{
+    font-weight: lighter;
+    color:coral;
+}
+#description{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
