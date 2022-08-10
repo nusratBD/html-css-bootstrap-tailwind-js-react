@@ -56,7 +56,7 @@ const loadDetails = (id) =>{
 const displayDetails = (data) =>{
   const food = data.meals[0];
   console.log(food);
-  
+  singleMeal.textContent = '';
   const div = document.createElement('div');
   div.classList.add('card');
   div.innerHTML = `
