@@ -2,7 +2,7 @@ let searchMealField = document.getElementById('input-meal');
 const cardContainer = document.getElementById('cards');
 const singleMeal = document.getElementById('single-meal');
 
-const loadMeal = () =>{
+const loadMeal = async () =>{
     let searchFood = searchMealField.value;
     searchMealField.value = '';
     cardContainer.textContent = '';
@@ -11,12 +11,12 @@ const loadMeal = () =>{
     if(searchFood == ''){
   }
     else{
-   fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchFood}`)
-   .then(res=>res.json())
-   .then(data=>displayFood(data));
+    const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchFood}`)
+    const data = await res.json();
+    displayFood(data);
     }
 }
-const displayFood = async data =>{
+const displayFood = (data) =>{
     const foods = data.meals;
     if(foods){
         foods.forEach(food=>{
