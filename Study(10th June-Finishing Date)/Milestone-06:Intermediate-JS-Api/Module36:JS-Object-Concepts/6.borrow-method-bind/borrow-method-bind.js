@@ -1,3 +1,6 @@
+/* 
+Borrow Method: Method borrowing, also known as function borrowing, is, as its name implies, a way for an object to use the methods of another object without redefining that same method.
+ */
 const student1 = {
     name: 'MD. X',
     class: 10,
