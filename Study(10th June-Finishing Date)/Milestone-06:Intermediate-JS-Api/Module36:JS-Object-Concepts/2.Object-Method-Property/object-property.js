@@ -24,3 +24,4 @@ const currentAmount = student.donation(10000000, 10000);
 console.log(currentAmount);
 const currentAmount2 = student.donation(5000000, 10000);
 console.log(currentAmount2);
+console.log(student);
