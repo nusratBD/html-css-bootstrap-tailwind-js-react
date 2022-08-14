@@ -6,3 +6,11 @@ const self = {
 }
 const entries = Object.entries(self);
 console.log(entries);
+/* 
+output: [
+  [ 'name', 'Nusrat Hurain' ],
+  [ 'age', 25 ],
+  [ 'profession', 'Software Engineer' ],
+  [ 'salary', 50000000 ]
+]
+*/
