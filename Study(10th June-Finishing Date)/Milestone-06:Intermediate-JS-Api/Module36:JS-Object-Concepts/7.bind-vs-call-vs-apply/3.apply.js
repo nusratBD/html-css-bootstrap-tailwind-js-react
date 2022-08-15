@@ -7,7 +7,7 @@ const student1 = {
         if(this.balance>=household){
             this.balance = this.balance - household - pocketMoney;
             console.log('Your total cost is: ',(household + pocketMoney));
-            console.log('Current Balance: ',this.balance);
+            console.log('Current Balance: ',this);
         }
         else{
             console.log('Total cost: ',(household + pocketMoney), 'is greated than your balance: ',this.balance);
@@ -31,7 +31,3 @@ const student3 ={
 const bind2 = student1.balanceCal.apply(student2, [1000, 800]);
 const bind3 = student1.balanceCal.apply(student3, [1200, 200]);
 student1.balanceCal(1000, 500);
-
-console.log(student1);
-console.log(student2);
-console.log(student3);
