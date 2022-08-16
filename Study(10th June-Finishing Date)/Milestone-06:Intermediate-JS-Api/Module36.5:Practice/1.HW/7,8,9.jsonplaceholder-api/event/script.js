@@ -7,23 +7,26 @@ loadImg();
 const displayImg = (data) =>{
     const imgContainer = document.getElementById('imgs');
     imgContainer.textContent = '';
-    for(const img of data){
+    data.forEach(img=>{
         const div = document.createElement('div');
         div.classList.add('card');
         div.innerHTML = `
-        <img src="${img.url}" class="card-img-top" alt="..." onclick=singleImg('${img.id}')>
+        <img src="${img.url}" class="card-img-top" alt="..." id="${img.id}">
         <div class="card-body">
         <h2>${img.title}</h2>
         </div>
         `;
         imgContainer.appendChild(div);
-    }
+    })
 }
-const singleImg = (id) =>{
-fetch(`https://jsonplaceholder.typicode.com/photos/${id}`)
+document.getElementById('imgs').addEventListener('click', function(event){
+  const id = event.target.id;
+  fetch(`https://jsonplaceholder.typicode.com/photos/${id}`)
 .then(res=>res.json())
 .then(data=>singleImgDisplay(data));
-}
+
+})
+
 const singleImgDisplay = (data) =>{
 console.log(data);
 const singleImg = document.getElementById('img');
