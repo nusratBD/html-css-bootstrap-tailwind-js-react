@@ -1,0 +1,21 @@
+#search-result{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card{
+    margin: 10px;
+}
+#single-drinks .card{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+span{
+    color: blue;
+}
+.not-found{
+    width: 75%;
+    margin: auto;
+    color: red;
+    text-align: center;
+}
