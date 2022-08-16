@@ -1,0 +1,24 @@
+#countries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.country{
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.league{
+    border: 2px solid green;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: bisque;
+}
+#leagues{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+img{
+    height: 100px;
+}
