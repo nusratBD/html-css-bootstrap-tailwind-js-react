@@ -1,0 +1,17 @@
+#imgs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.img{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+img{
+    height: 200px;
+    width: 100%;
+}
+#spinner{
+    display: none;
+}
