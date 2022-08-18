@@ -1,0 +1,3 @@
+/* 
+Closure is accessing data outside of the function. But closure can not access outside of the function.
+*/

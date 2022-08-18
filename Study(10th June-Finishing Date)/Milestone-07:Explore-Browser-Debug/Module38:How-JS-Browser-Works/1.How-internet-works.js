@@ -1,0 +1,4 @@
+/* 
+Every electronics device has a unique IP address.
+Every website has a unique IP address that is known as DNS.
+*/
