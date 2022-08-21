@@ -1,19 +1,20 @@
 const addCart = () =>{
     const cartInput = document.getElementById('item-input');
     const cartValue = cartInput.value;
-    displayCart(cartValue);
+    localStorage(cartValue);
     cartInput.value = '';
 }
 const displayCart = (value) =>{
+    console.log(value);
     const itemArea = document.getElementById('items');
-    const ul = document.createElement('ul');
+    for(const product in value){
+        const ul = document.createElement('ul');
     ul.innerHTML = `
-    <li>${value.toUpperCase()}</li>
+    <li>${product}: ${value[product]}</li>
     `;
     console.log(ul);
     itemArea.appendChild(ul);
-    localStorage(value);
-
+    }
 }
 const localStorage = (value) =>{
     // console.log(value);
@@ -29,6 +30,7 @@ else{
 }
 
 cart[value] =1;
+displayCart(cart);
 const cartString = JSON.stringify(cart);
 console.log(cartString);
 window.localStorage.setItem('cart', cartString);
