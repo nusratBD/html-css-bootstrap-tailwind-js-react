@@ -12,5 +12,5 @@ access: self.name;
 */
 
 /* 
-As DOM is only works in browser, it is called browser API.
+As DOM works only in browser, it is called browser API.
 */
