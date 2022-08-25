@@ -1,0 +1,3 @@
+/* 
+Performance tab shows an overall performance report of the website during interaction on it.
+*/

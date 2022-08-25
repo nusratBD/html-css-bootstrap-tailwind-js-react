@@ -1,0 +1,1 @@
+console.table(data.hits,['likes']);
