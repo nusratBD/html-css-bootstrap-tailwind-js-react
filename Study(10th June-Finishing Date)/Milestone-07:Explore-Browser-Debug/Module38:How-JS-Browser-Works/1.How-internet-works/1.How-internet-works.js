@@ -10,7 +10,7 @@ Ans: When we search anything in our search bar, it first goes to the DNS server 
 
 /* 
 www: The World Wide Web. It is the place where all the data of internet are stored.
-http: Hypertext Transfer Protocol, https: Hypertext Transfer Protocol Secure. This two are the road to go PC to www and backs www to PC. All our data pass PC to www and www to PC either in http or https. http data is readable, and https data is non-readable(decrypted). As a result http data can be hack, and https data can not be hacked.
+http: Hypertext Transfer Protocol, https: Hypertext Transfer Protocol Secure. This two are the road to go PC to www and backs www to PC. All our data pass PC to www and www to PC either in http or https. http data is readable, and https data is non-readable(decrypted). As a result http data can be hacked, and https data can not be hacked.
 */
 
 /* 
