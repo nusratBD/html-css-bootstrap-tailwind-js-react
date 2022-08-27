@@ -225,9 +225,10 @@ function longLineCode() {
 const uniquifyNames = function (items) {
   console.log(items);
   const uniqueNames = {};
+  //uniqueNames[item.name]
   return items.map(function (item) {
     console.log(item.name);
-    if (item.name) {
+    if (uniqueNames[item.name] !== undefined) {
       uniqueNames[item.name] += " ";
       item.name += uniqueNames[item.name];
     } else {
