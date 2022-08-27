@@ -83,6 +83,8 @@ const initialCountListener = function () {
 function addRecordHandler() {
   const name = document.getElementById("name").value;
   const salary = document.getElementById("salary").value;
+  document.getElementById("name").value = '';
+  document.getElementById("salary").value = '';
 
   if (!name || !salary) {
     showDataError(name, salary);
@@ -131,19 +133,22 @@ const loadFirebaseData = function (resHandler) {
 };
 
 const displayLastItemDialog = function (lastItem) {
-  const dlg = document.getElementById("dialog-last-item");
-  dlg.classList.remove("hide");
-  document.getElementById("showName").innerText = lastItem.name;
-  document.getElementById("showSalary").innerText = d3.format(",.0f")(
-    lastItem.salary
-  );
-  dlg.dialog({
-    buttons: {
-      Ok: function () {
-        $(this).dialog("close");
-      },
-    },
-  });
+  // const dlg = document.getElementById("dialog-last-item");
+  // dlg.classList.remove("hide");
+  // document.getElementById("showName").innerText = lastItem.name;
+  // document.getElementById("showSalary").innerText = d3.format(",.0f")(
+  //   lastItem.salary
+  // );
+  alert(`Name: ${lastItem.name} \nSalary: ${lastItem.salary}` );
+ 
+
+  // dlg.dialog({
+  //   buttons: {
+  //     Ok: function () {
+  //       $(this).dialog("close");
+  //     },
+  //   },
+  // });
 };
 
 var showDataError = function (name, salary) {
