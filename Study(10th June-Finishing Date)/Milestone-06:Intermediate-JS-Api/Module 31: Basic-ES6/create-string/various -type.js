@@ -1,7 +1,7 @@
 //3 types.
 let singleQuote1 = 'My name is Nusrat Hurain';
 let doubleQuote1 = "I am from Bangladesh";
-let caret1 = 'I want to be a software Engineer';
+let caret1 = `I want to be a software Engineer`;
 
 //Problem of singleQuote:
 //1. We can not write multiline.
