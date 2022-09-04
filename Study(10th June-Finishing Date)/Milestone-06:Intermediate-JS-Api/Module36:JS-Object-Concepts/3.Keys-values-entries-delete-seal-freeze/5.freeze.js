@@ -1,5 +1,5 @@
 /* 
-Freeze: If we freeze an object, we can not delte, add, or modify its object
+Freeze: If we freeze an object, we can not delete, add, or modify its object
 */
 const self = {
     name: 'Nusrat Hurain',

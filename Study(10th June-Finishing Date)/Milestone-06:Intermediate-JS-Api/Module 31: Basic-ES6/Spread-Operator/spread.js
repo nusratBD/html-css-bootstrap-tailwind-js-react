@@ -26,6 +26,6 @@ console.log(numbers4);//Output: [22, 23, 67, 56, 45, 81, 96, 87]; At the time of
 /*Note: Benefits of the Spread Operator
 1. We can get out the value of an array
 2. We can copy an array
-3. We can avoid the reference effece
-4. We can push element to copied array according to our wish
+3. We can avoid the reference effect
+4. We can push element to the copied array according to our wish
 */
